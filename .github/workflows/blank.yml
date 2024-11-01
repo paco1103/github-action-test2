@@ -33,8 +33,8 @@ jobs:
   upload-gdrive:
     runs-on: ubuntu-latest
     steps:
-    - uses: adityak74/google-drive-upload-git-action@main
     - name: Upload to Google Drive
+      uses: adityak74/google-drive-upload-git-action@main
       with:
         credentials: ${{ secrets.GOOGLE_API_KEY1 }}
         filename: "demo/target/demo-1.0-SNAPSHOT.jar"
